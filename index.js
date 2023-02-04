@@ -49,7 +49,6 @@ function onLoad(){
     }
     var h = document.createElement("H1");
     var t = document.createTextNode("find four omis before you find four " + friend + "s");
-    h.className = 'center';
     h.appendChild(t);
     document.body.appendChild(h);
     document.body.appendChild(grid);
