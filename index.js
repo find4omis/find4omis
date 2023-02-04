@@ -20,7 +20,7 @@ function onLoad(){
  	var num1 = Math.floor(Math.random() * 7);
 	var num2 = Math.floor(Math.random() * 7);
 	var numCombined = num1.toString()+num2.toString();
-	if(!OMInums.includes(numCombined) && !Othernums.includes(numCombined){
+	if(!OMInums.includes(numCombined) && !Othernums.includes(numCombined)){
 	     Othernums.push(numCombined);
 	     console.log("not omi", numCombined);
 	}
