@@ -30,9 +30,9 @@ function onLoad(){
     var i=0;
     var grid = document.createElement('table');
     grid.className = 'grid center';
-    for (var r=0;r<8;++r){
+    for (var r=0;r<7;++r){
         var tr = grid.appendChild(document.createElement('tr'));
-        for (var c=0;c<8;++c){
+        for (var c=0;c<7;++c){
             var cell = tr.appendChild(document.createElement('td'));
 	    cell.id = ""+r+""+c;
 	    if(OMInums.includes(cell.id)){
