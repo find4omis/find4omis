@@ -51,6 +51,11 @@ function help(){
     		img.setAttribute('src', '/media/omi.png');
     		this.appendChild(img);
 	}
+	if(this.className === "other"){
+	        var img = document.createElement('img');
+    		img.setAttribute('src', '/media/brother.png');
+    		this.appendChild(img);
+	}
 }
 
 /*
