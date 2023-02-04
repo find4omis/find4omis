@@ -14,6 +14,7 @@ function onLoad(){
         var tr = grid.appendChild(document.createElement('tr'));
         for (var c=0;c<10;++c){
             var cell = tr.appendChild(document.createElement('td'));
+	    cell.id = r+c;
             cell.innerHTML = " ";
             cell.addEventListener('click', help);
         }
@@ -22,7 +23,7 @@ function onLoad(){
 }
 
 function help(){
-	
+	alert this.id;
 }
 
 /*
