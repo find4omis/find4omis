@@ -1,4 +1,4 @@
-const FRIENDS_NUM = 3;
+const FRIENDS = {"lanska", "peers"}
 
 function onLoad(){
 
@@ -57,7 +57,7 @@ function help(){
 	}
 	else if(this.className === "notomi"){
 	        var img = document.createElement('img');
-    		img.setAttribute('src', '/media/brother.png');
+    		img.setAttribute('src', '/media/'+FRIENDS[Math.floor(Math.random() * FRIENDS.length]+'.png');
 		this.className = this.className + " hasnotomi";
     		this.appendChild(img);
 	}
