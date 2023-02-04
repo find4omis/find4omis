@@ -4,10 +4,12 @@ function onLoad(){
 
     var screenWidth = window.innerWidth;
     var screenHeight = window.innerHeight;
+
+    
 	
     var i=0;
     var grid = document.createElement('table');
-    grid.className = 'grid';
+    grid.className = 'grid center';
     for (var r=0;r<10;++r){
         var tr = grid.appendChild(document.createElement('tr'));
         for (var c=0;c<10;++c){
@@ -20,7 +22,7 @@ function onLoad(){
 }
 
 function help(){
-	console.log("hey queen");
+	
 }
 
 /*
