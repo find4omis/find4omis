@@ -46,8 +46,10 @@ function onLoad(){
 
 function help(){
 	this.innerHTML = "OMI";
-	if(this.className === "omi" || this.className === "notomi"){
-	     alert(this.className);
+	if(this.className === "omi"){
+	        var img = document.createElement('img');
+    		img.setAttribute('src', '/media/omi.png');
+    		this.appendChild(img);
 	}
 }
 
