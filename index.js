@@ -13,11 +13,16 @@ function onLoad(){
         for (var c=0;c<10;++c){
             var cell = tr.appendChild(document.createElement('td'));
             cell.innerHTML = ++i;
-            cell.addEventListener('click',() => (console.log("hey"));
+            cell.addEventListener('click', help);
         }
     }
     document.body.appendChild(grid);
 }
+
+function help(){
+	console.log("hey queen");
+}
+
 
 function onClick(event){
     var img = document.createElement('img');
