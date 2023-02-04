@@ -7,14 +7,14 @@ function onLoad(){
 
     var OMInums = [];
     var Othernums = [];
-    while(OMInums.length < 8){
+    while(OMInums.length < 4){
  	var num = Math.floor(Math.random() * 64);
 	if(!OMInums.includes(num)){
 	     OMInums.push(num.toString());
 	     console.log("omi", num);
 	}
     }
-    while(Othernums.length < 8){
+    while(Othernums.length < 4){
  	var num = Math.floor(Math.random() * 64);
 	if(!OMInums.includes(num) && !Othernums.includes(num)){
 	     Othernums.push(num.toString());
@@ -26,9 +26,9 @@ function onLoad(){
     var i=0;
     var grid = document.createElement('table');
     grid.className = 'grid center';
-    for (var r=0;r<10;++r){
+    for (var r=0;r<8;++r){
         var tr = grid.appendChild(document.createElement('tr'));
-        for (var c=0;c<10;++c){
+        for (var c=0;c<8;++c){
             var cell = tr.appendChild(document.createElement('td'));
 	    cell.id = ""+r+""+c;
 	    if(OMInums.includes(cell.id)){
