@@ -23,7 +23,7 @@ function onLoad(){
 }
 
 function help(){
-	alert this.id;
+	alert(this.id);
 }
 
 /*
