@@ -48,6 +48,7 @@ function help(){
 	if(this.className === "omi"){
 	        var img = document.createElement('img');
     		img.setAttribute('src', '/media/omi.png');
+		this.className = this.className + " hasomi";
     		this.appendChild(img);
 	}
 	else if(this.className === "notomi"){
@@ -55,7 +56,7 @@ function help(){
     		img.setAttribute('src', '/media/brother.png');
     		this.appendChild(img);
 	}
-	else {
+	else if(!this.className.includes("has")) {
 		this.className = "yousuck";
 	}
 }
