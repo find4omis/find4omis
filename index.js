@@ -10,14 +10,14 @@ function onLoad(){
     while(OMInums.length < 4){
  	var num = Math.floor(Math.random() * 100);
 	if(!OMInums.includes(num)){
-	     OMInums.push(num);
+	     OMInums.push(num.toString());
 	     console.log("omi", num);
 	}
     }
     while(Othernums.length < 4){
  	var num = Math.floor(Math.random() * 100);
 	if(!OMInums.includes(num) && !Othernums.includes(num){
-	     Othernums.push(num);
+	     Othernums.push(num.toString());
 	     console.log("not omi", num);
 	}
     }
@@ -31,6 +31,12 @@ function onLoad(){
         for (var c=0;c<10;++c){
             var cell = tr.appendChild(document.createElement('td'));
 	    cell.id = ""+r+c;
+	    if(OMInums.includes(cell.id)){
+		cell.className = "omi";
+	    }
+	    if(Othernums.includes(cell.id)){
+		cell.className = "notomi";
+	    }
             cell.innerHTML = " ";
             cell.addEventListener('click', help);
         }
@@ -40,6 +46,9 @@ function onLoad(){
 
 function help(){
 	this.innerHTML = "OMI";
+	if(this.className === "omi" || this.className === "notomi"){
+	     alert(this.className);
+	}
 }
 
 /*
