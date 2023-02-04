@@ -8,17 +8,21 @@ function onLoad(){
     var OMInums = [];
     var Othernums = [];
     while(OMInums.length < 4){
- 	var num = Math.floor(Math.random() * 64);
-	if(!OMInums.includes(num)){
-	     OMInums.push(num.toString());
-	     console.log("omi", num);
+ 	var num1 = Math.floor(Math.random() * 7);
+	var num2 = Math.floor(Math.random() * 7);
+	string numCombined = num1.toString()+num2.toString();
+	if(!OMInums.includes(numCombined)){
+	     OMInums.push(numCombined);
+	     console.log("nomi", numCombined);
 	}
     }
     while(Othernums.length < 4){
- 	var num = Math.floor(Math.random() * 64);
-	if(!OMInums.includes(num) && !Othernums.includes(num)){
-	     Othernums.push(num.toString());
-	     console.log("not omi", num);
+ 	var num1 = Math.floor(Math.random() * 7);
+	var num2 = Math.floor(Math.random() * 7);
+	string numCombined = num1.toString()+num2.toString();
+	if(!OMInums.includes(numCombined) && !Othernums.includes(numCombined){
+	     Othernums.push(numCombined);
+	     console.log("not omi", numCombined);
 	}
     }
 	
