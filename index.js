@@ -6,13 +6,22 @@ function onLoad(){
     var screenHeight = window.innerHeight;
 
     var OMInums = [];
+    var Othernums = [];
     while(OMInums.length < 4){
  	var num = Math.floor(Math.random() * 100);
 	if(!OMInums.includes(num)){
 	     OMInums.push(num);
-	     console.log(num);
+	     console.log("omi", num);
 	}
     }
+    while(Othernums.length < 4){
+ 	var num = Math.floor(Math.random() * 100);
+	if(!OMInums.includes(num) && !Othernums.includes(num){
+	     Othernums.push(num);
+	     console.log("not omi", num);
+	}
+    }
+	
 	
     var i=0;
     var grid = document.createElement('table');
