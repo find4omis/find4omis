@@ -10,7 +10,7 @@ function onLoad(){
     while(OMInums.length < 4){
  	var num1 = Math.floor(Math.random() * 7);
 	var num2 = Math.floor(Math.random() * 7);
-	string numCombined = num1.toString()+num2.toString();
+	var numCombined = num1.toString()+num2.toString();
 	if(!OMInums.includes(numCombined)){
 	     OMInums.push(numCombined);
 	     console.log("nomi", numCombined);
@@ -19,7 +19,7 @@ function onLoad(){
     while(Othernums.length < 4){
  	var num1 = Math.floor(Math.random() * 7);
 	var num2 = Math.floor(Math.random() * 7);
-	string numCombined = num1.toString()+num2.toString();
+	var numCombined = num1.toString()+num2.toString();
 	if(!OMInums.includes(numCombined) && !Othernums.includes(numCombined){
 	     Othernums.push(numCombined);
 	     console.log("not omi", numCombined);
