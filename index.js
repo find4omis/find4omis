@@ -13,11 +13,7 @@ function onLoad(){
         for (var c=0;c<10;++c){
             var cell = tr.appendChild(document.createElement('td'));
             cell.innerHTML = ++i;
-            cell.addEventListener('click',(function(el,r,c,i){
-                return function(){
-                    console.log("hey");
-                }
-            })(cell,r,c,i),false);*/
+            cell.addEventListener('click',(console.log("hey"));
         }
     }
     document.body.appendChild(grid);
