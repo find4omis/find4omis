@@ -1,4 +1,4 @@
-const FRIENDS = {"lanska", "peers"}
+const FRIENDS = {"lanska", "peers"};
 var friend = "";
 
 function onLoad(){
