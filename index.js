@@ -1,9 +1,9 @@
-const FRIENDS = {"lanska", "peers"};
+const FRIENDS = ["lanska", "peers"];
 var friend = "";
 
 function onLoad(){
 
-    friend = FRIENDS[Math.floor(Math.random() * FRIENDS.length];
+    friend = FRIENDS[Math.floor(Math.random() * FRIENDS.length)];
     var screenWidth = window.innerWidth;
     var screenHeight = window.innerHeight;
 
