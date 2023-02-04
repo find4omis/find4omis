@@ -5,7 +5,14 @@ function onLoad(){
     var screenWidth = window.innerWidth;
     var screenHeight = window.innerHeight;
 
-    
+    var OMInums = [];
+    while(OMInums.length < 4){
+ 	var num = Math.floor(Math.random() * 100);
+	if(!OMInums.includes(num)){
+	     OMInums.add(num);
+	     console.log(num);
+	}
+    }
 	
     var i=0;
     var grid = document.createElement('table');
