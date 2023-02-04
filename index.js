@@ -23,7 +23,7 @@ function help(){
 	console.log("hey queen");
 }
 
-
+/*
 function onClick(event){
     var img = document.createElement('img');
     img.setAttribute('src', '/media/egg.png');
@@ -35,4 +35,4 @@ function onClick(event){
     h2.textContent = "oh no I have egg on me!";
     document.body.appendChild(h2);
    
-}
+}*/
