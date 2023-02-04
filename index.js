@@ -7,14 +7,14 @@ function onLoad(){
 
     var OMInums = [];
     var Othernums = [];
-    while(OMInums.length < 4){
+    while(OMInums.length < 8){
  	var num = Math.floor(Math.random() * 100);
 	if(!OMInums.includes(num)){
 	     OMInums.push(num.toString());
 	     console.log("omi", num);
 	}
     }
-    while(Othernums.length < 4){
+    while(Othernums.length < 8){
  	var num = Math.floor(Math.random() * 100);
 	if(!OMInums.includes(num) && !Othernums.includes(num)){
 	     Othernums.push(num.toString());
