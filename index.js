@@ -50,7 +50,7 @@ function help(){
     		img.setAttribute('src', '/media/omi.png');
     		this.appendChild(img);
 	}
-	else if(this.className === "other"){
+	else if(this.className === "notomi"){
 	        var img = document.createElement('img');
     		img.setAttribute('src', '/media/brother.png');
     		this.appendChild(img);
