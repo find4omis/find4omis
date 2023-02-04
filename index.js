@@ -16,7 +16,7 @@ function onLoad(){
     }
     while(Othernums.length < 4){
  	var num = Math.floor(Math.random() * 100);
-	if(!OMInums.includes(num) && !Othernums.includes(num){
+	if(!OMInums.includes(num) && !Othernums.includes(num)){
 	     Othernums.push(num.toString());
 	     console.log("not omi", num);
 	}
