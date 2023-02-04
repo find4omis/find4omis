@@ -8,14 +8,14 @@ function onLoad(){
     var OMInums = [];
     var Othernums = [];
     while(OMInums.length < 8){
- 	var num = Math.floor(Math.random() * 100);
+ 	var num = Math.floor(Math.random() * 64);
 	if(!OMInums.includes(num)){
 	     OMInums.push(num.toString());
 	     console.log("omi", num);
 	}
     }
     while(Othernums.length < 8){
- 	var num = Math.floor(Math.random() * 100);
+ 	var num = Math.floor(Math.random() * 64);
 	if(!OMInums.includes(num) && !Othernums.includes(num)){
 	     Othernums.push(num.toString());
 	     console.log("not omi", num);
@@ -30,7 +30,7 @@ function onLoad(){
         var tr = grid.appendChild(document.createElement('tr'));
         for (var c=0;c<10;++c){
             var cell = tr.appendChild(document.createElement('td'));
-	    cell.id = ""+r+c;
+	    cell.id = ""+r+""+c;
 	    if(OMInums.includes(cell.id)){
 		cell.className = "omi";
 	    }
