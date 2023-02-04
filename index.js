@@ -54,6 +54,7 @@ function help(){
 	else if(this.className === "notomi"){
 	        var img = document.createElement('img');
     		img.setAttribute('src', '/media/brother.png');
+		this.className = this.className + " hasnotomi";
     		this.appendChild(img);
 	}
 	else if(!this.className.includes("has")) {
