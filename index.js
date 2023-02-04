@@ -45,16 +45,18 @@ function onLoad(){
 }
 
 function help(){
-	this.innerHTML = "OMI";
 	if(this.className === "omi"){
 	        var img = document.createElement('img');
     		img.setAttribute('src', '/media/omi.png');
     		this.appendChild(img);
 	}
-	if(this.className === "other"){
+	else if(this.className === "other"){
 	        var img = document.createElement('img');
     		img.setAttribute('src', '/media/brother.png');
     		this.appendChild(img);
+	}
+	else {
+		this.className = "yousuck";
 	}
 }
 
