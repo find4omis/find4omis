@@ -13,9 +13,9 @@ function onLoad(){
         for (var c=0;c<10;++c){
             var cell = tr.appendChild(document.createElement('td'));
             cell.innerHTML = ++i;
-            /*cell.addEventListener('click',(function(el,r,c,i){
+            cell.addEventListener('click',(function(el,r,c,i){
                 return function(){
-                    callback(el,r,c,i);
+                    console.log("hey");
                 }
             })(cell,r,c,i),false);*/
         }
