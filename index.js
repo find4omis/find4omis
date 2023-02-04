@@ -1,7 +1,9 @@
 const FRIENDS = {"lanska", "peers"}
+var friend = "";
 
 function onLoad(){
 
+    friend = FRIENDS[Math.floor(Math.random() * FRIENDS.length];
     var screenWidth = window.innerWidth;
     var screenHeight = window.innerHeight;
 
@@ -57,7 +59,7 @@ function help(){
 	}
 	else if(this.className === "notomi"){
 	        var img = document.createElement('img');
-    		img.setAttribute('src', '/media/'+FRIENDS[Math.floor(Math.random() * FRIENDS.length]+'.png');
+    		img.setAttribute('src', '/media/'+friend+'.png');
 		this.className = this.className + " hasnotomi";
     		this.appendChild(img);
 	}
