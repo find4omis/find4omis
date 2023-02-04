@@ -9,7 +9,7 @@ function onLoad(){
     while(OMInums.length < 4){
  	var num = Math.floor(Math.random() * 100);
 	if(!OMInums.includes(num)){
-	     OMInums.add(num);
+	     OMInums.push(num);
 	     console.log(num);
 	}
     }
