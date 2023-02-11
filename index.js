@@ -11,7 +11,7 @@ function onLoad(){
     var Othernums = [];
     while(OMInums.length < 4){
  	var num1 = Math.floor(Math.random() * 7);
-	var num2 = Math.floor(Math.random() * 7);
+	var num2 = Math.floor(Math.random() * 4);
 	var numCombined = num1.toString()+num2.toString();
 	if(!OMInums.includes(numCombined)){
 	     OMInums.push(numCombined);
@@ -20,7 +20,7 @@ function onLoad(){
     }
     while(Othernums.length < 4){
  	var num1 = Math.floor(Math.random() * 7);
-	var num2 = Math.floor(Math.random() * 7);
+	var num2 = Math.floor(Math.random() * 4);
 	var numCombined = num1.toString()+num2.toString();
 	if(!OMInums.includes(numCombined) && !Othernums.includes(numCombined)){
 	     Othernums.push(numCombined);
@@ -34,7 +34,7 @@ function onLoad(){
     grid.className = 'grid center';
     for (var r=0;r<7;++r){
         var tr = grid.appendChild(document.createElement('tr'));
-        for (var c=0;c<7;++c){
+        for (var c=0;c<4;++c){
             var cell = tr.appendChild(document.createElement('td'));
 	    cell.id = ""+r+""+c;
 	    if(OMInums.includes(cell.id)){
